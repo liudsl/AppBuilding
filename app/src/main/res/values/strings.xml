@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PartyBuilding</string>
+    <string-array name="main_menu">
+        <item>社区新闻</item>
+        <item>学习资料</item>
+        <item>党课</item>
+        <item>党员花名册</item>
+        <item>党建活动</item>
+        <item>党费缴纳</item>
+    </string-array>
+</resources>
