@@ -37,6 +37,8 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             android:id="@+id/menu_main"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -46,8 +48,8 @@
 
             <ImageView
                 android:id="@+id/menu_main_icon"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@drawable/menu_icon_main_selector" />
 
             <TextView
@@ -55,11 +57,13 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="主页"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             android:id="@+id/menu_message"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -69,8 +73,8 @@
 
             <ImageView
                 android:id="@+id/menu_message_icon"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@drawable/menu_icon_message_selector" />
 
             <TextView
@@ -78,11 +82,13 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="消息"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             android:id="@+id/menu_find"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -92,8 +98,8 @@
 
             <ImageView
                 android:id="@+id/menu_find_icon"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@drawable/menu_icon_find_selector" />
 
             <TextView
@@ -101,12 +107,14 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="发现"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
 
         </LinearLayout>
 
 
         <LinearLayout
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             android:id="@+id/menu_me"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -116,8 +124,8 @@
 
             <ImageView
                 android:id="@+id/menu_me_icon"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:src="@drawable/menu_icon_me_selector" />
 
             <TextView
@@ -125,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="我的"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
 
         </LinearLayout>
 

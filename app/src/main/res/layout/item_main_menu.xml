@@ -9,8 +9,8 @@
     <ImageView
         android:layout_marginTop="10dp"
         android:id="@+id/item_main_menu_icon"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         />
 
     <TextView
@@ -18,7 +18,6 @@
         android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:textSize="20sp"/>
+        android:textSize="15sp" />
 
 </LinearLayout>

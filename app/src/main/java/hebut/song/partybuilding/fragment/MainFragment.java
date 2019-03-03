@@ -1,6 +1,5 @@
 package hebut.song.partybuilding.fragment;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -11,9 +10,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-
-import java.util.List;
 
 import hebut.song.partybuilding.R;
 import hebut.song.partybuilding.adapter.MainContentRecyclerViewAdapter;
@@ -35,9 +31,9 @@ public class MainFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
         viewPager = getView().findViewById(R.id.main_header_ViewPager);
         recyclerView = getView().findViewById(R.id.main_recycleView_function);
+
         int[] drawablePager = {R.drawable.main_pager_1, R.drawable.main_pager_2,
                 R.drawable.main_pager_3, R.drawable.main_pager_4};
         int[] drawableMenu = {R.drawable.main_function_news, R.drawable.main_function_material, R.drawable.main_function_courses,
