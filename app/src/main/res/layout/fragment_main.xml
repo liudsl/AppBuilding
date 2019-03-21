@@ -6,13 +6,13 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/main_header_ViewPager"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
-    </android.support.v4.view.ViewPager>
+        android:layout_height="200dp"></android.support.v4.view.ViewPager>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/main_header_ViewPager">
+        android:layout_below="@id/main_header_ViewPager"
+        android:layout_marginTop="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,11 +21,16 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/main_recycleView_function"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
 
-
-
-            </android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_below="@id/main_recycleView_function"
+                android:id="@+id/main_recycleView_Second_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
         </RelativeLayout>
 
 

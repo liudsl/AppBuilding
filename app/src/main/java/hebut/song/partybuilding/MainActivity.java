@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         menuFind.setOnClickListener(this);
         menuMessage.setOnClickListener(this);
         menuMe.setOnClickListener(this);
-    }
+}
 
     @Override
     public void onClick(View v) {
@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .hide(messageFragment)
                         .hide(meFragment)
                         .commit();
+                resetImageSelected();
+                menuFind.setSelected(true);
                 break;
             case R.id.menu_main_icon:
                 this.getSupportFragmentManager()
@@ -74,6 +76,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .hide(messageFragment)
                         .hide(meFragment)
                         .commit();
+                resetImageSelected();
+                menuMain.setSelected(true);
                 break;
             case R.id.menu_me_icon:
                 this.getSupportFragmentManager()
@@ -83,6 +87,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .hide(messageFragment)
                         .show(meFragment)
                         .commit();
+                resetImageSelected();
+                menuMe.setSelected(true);
                 break;
 
             case R.id.menu_message_icon:
@@ -93,7 +99,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .show(messageFragment)
                         .hide(meFragment)
                         .commit();
+                resetImageSelected();
+                menuMessage.setSelected(true);
                 break;
         }
+    }
+
+    private void resetImageSelected(){
+        menuMain.setSelected(false);
+        menuMe.setSelected(false);
+        menuMessage.setSelected(false);
+        menuFind.setSelected(false);
     }
 }

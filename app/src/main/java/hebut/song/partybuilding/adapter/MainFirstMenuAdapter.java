@@ -1,6 +1,7 @@
 package hebut.song.partybuilding.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 
@@ -13,17 +14,27 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import hebut.song.partybuilding.MainActivity;
 import hebut.song.partybuilding.R;
 import hebut.song.partybuilding.entity.MyMenu;
+import hebut.song.partybuilding.interfaces.OnRecycleViewClickListener;
 
-public class MainContentRecyclerViewAdapter extends RecyclerView.Adapter<MainMenuViewHolder> {
+public class MainFirstMenuAdapter extends RecyclerView.Adapter<MainMenuViewHolder> {
+
 
     private Context context;
     private List<MyMenu> menuList;
+    private OnRecycleViewClickListener myListener;
 
-    public MainContentRecyclerViewAdapter(Context context, List<MyMenu> menuList) {
+    public MainFirstMenuAdapter(Context context, List<MyMenu> menuList) {
         this.context = context;
         this.menuList = menuList;
+    }
+
+    public MainFirstMenuAdapter(Context context, List<MyMenu> menuList, OnRecycleViewClickListener myListener) {
+        this.context = context;
+        this.menuList = menuList;
+        this.myListener = myListener;
     }
 
     @NonNull
@@ -33,10 +44,21 @@ public class MainContentRecyclerViewAdapter extends RecyclerView.Adapter<MainMen
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MainMenuViewHolder mainMenuViewHolder, int i) {
+    public void onBindViewHolder(@NonNull MainMenuViewHolder mainMenuViewHolder, final int i) {
         MyMenu menu = menuList.get(i);
         mainMenuViewHolder.imageView.setImageResource(menu.icon);
         mainMenuViewHolder.textView.setText(menu.iconName);
+
+
+        if(this.myListener != null){
+            mainMenuViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    myListener.myClick(v, i);
+                }
+            });
+
+        }
     }
 
     @Override

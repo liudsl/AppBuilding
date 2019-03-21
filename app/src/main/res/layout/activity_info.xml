@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_activity_title"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="This is a Title"
+                android:textSize="30sp"/>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:background="#DBDADA"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/news_activity_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  这是一个示例"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

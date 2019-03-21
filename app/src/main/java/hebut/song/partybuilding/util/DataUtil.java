@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import hebut.song.partybuilding.entity.MyMenu;
+import hebut.song.partybuilding.entity.MyInfo;
+import hebut.song.partybuilding.entity.MyNew;
 
 
 public class DataUtil {
@@ -36,5 +38,21 @@ public class DataUtil {
             data.add(new MyMenu(drawableList[i], names[i]));
         }
         return data;
+    }
+
+    public static List<MyInfo> getInfosList(int[] drawableList, String[] titles){
+        List<MyInfo> list = new ArrayList<>();
+        for (int i =0; i<drawableList.length; i++){
+            list.add(new MyInfo(titles[i], drawableList[i]));
+        }
+        return list;
+    }
+
+    public static List<MyNew> getNewsList(int[] drawable, String[] title, String[] time){
+        List<MyNew> list = new ArrayList<>();
+        for (int i=0; i<drawable.length;i++){
+            list.add(new MyNew(title[i], drawable[i], time[i]));
+        }
+        return list;
     }
 }

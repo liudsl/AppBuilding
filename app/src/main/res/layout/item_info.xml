@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1e4f1"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1e4f1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/info_image"
+            android:src="@drawable/main_function_exam"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/info_title"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textColor="#666872"
+            android:textSize="20sp"
+            android:text="aoskdpoakdpo"
+            android:layout_marginTop="30dip"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/news_button"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="详细信息"-->
+            <!--android:layout_marginTop="30dip"/>-->
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/info_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间：XXXX-XX-XX"
+            />
+
+
+    </LinearLayout>
+    <!--<TextView-->
+        <!--android:id="@+id/info"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#666872"-->
+        <!--android:layout_marginLeft="50dip"/>-->
+
+</LinearLayout>
